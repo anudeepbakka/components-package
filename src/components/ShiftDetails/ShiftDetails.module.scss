@@ -1,0 +1,36 @@
+@use '../../assets/styles/variables.scss' as *;
+.event{
+    line-height: normal;
+  }
+  .shiftDetails{
+    width: 14.5rem;
+    min-width: 14.5rem;
+  }
+  
+  .shiftTitle{
+    font-family: CircularProBold;
+    font-size: 15px;
+  }
+
+  .positionName{
+    font-family: CircularPro;
+    font-size: 12px;
+  }
+  .time{
+    font-family: CircularPro;
+    font-size: 12px;
+  }
+  
+  .shiftColor , .positionColor{
+    border-radius: 2px;
+    display: inline-block;
+    width: 8px;
+    vertical-align: baseline;
+    height: 12px;
+    background-color: $lighter-border-gray;
+  }
+  
+  .shiftDuration{
+    color: $md-gray;
+    font-size: 10px;
+  }

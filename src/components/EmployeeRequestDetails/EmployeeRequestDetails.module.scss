@@ -1,0 +1,49 @@
+@import '../../assets/styles/variables.scss';
+
+.sucessGreen{
+    color: $green;
+  }
+  
+  .failureRed{
+    color: $red;
+  }
+  
+  .hoursMessage{
+    padding: 10px;
+  }
+  
+  .mailTo{
+    max-height: 18px;
+    font-size: 12px;
+    a {
+        color: $blue;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        max-width: 100%
+      }
+  }
+
+  .employeeFullName{
+    max-width: 40%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    h6{
+      font-size: 15px;
+    }
+    h6 , small{
+      white-space: nowrap; 
+      overflow: hidden; 
+      text-overflow: ellipsis;
+    }
+  }
+  
+  .lightGray{
+    color: $md-gray
+  }
+  
+  .fontSize12{
+    font-size: 12px;
+  }

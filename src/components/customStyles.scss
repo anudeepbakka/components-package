@@ -1,0 +1,115 @@
+@use '../../src/assets/styles/variables.scss' as *;
+@use '../../src/assets/styles/styles.scss' as *;
+@use '../../src/index.scss' as *;
+
+.accordion-button:not(.collapsed) {
+    background-color: $white;
+}
+
+.accordion-button, .accordion-button .collapsed {
+    padding-top: 0px !important;
+    padding-left: 3px !important;
+    padding-bottom: 0px !important;
+    padding-right: 10px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: $white !important;
+}
+
+.accordion-button::after {
+    position: absolute;
+    top: 2%;
+    right: 1.5%;
+    border-radius: 5px;
+    background-size: 14px !important;
+}
+
+.accordion-header {
+    padding-top: 0px !important;
+}
+
+.accordion-button:not(.collapsed)::after{
+  position: absolute;
+  top: 2%;
+  right: 1.5%;
+}
+
+.pagination-body {
+    font-family: 'CircularPro'
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+
+.pagination-button,
+.pagination-number {
+    padding: 8px 12px;
+    border: 1px solid $lt-grey-2;
+    background-color: $white;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.pagination-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination-number.active {
+    background-color: $blue;
+    color: $white;
+    border-color: $blue;
+}
+
+.jumpToPage {
+    background-color: $blue !important;
+}
+
+.offcanvas-body {
+    border-top: 1px solid $lighter-gray;
+}
+
+.custom-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid $lighter-gray;
+    border-radius: 4px;
+    background-color: $white;
+    cursor: pointer;
+    position: relative;
+}
+
+.custom-checkbox:checked {
+    background-color: $white;
+}
+
+.custom-checkbox:checked::after {
+    content: '✓';
+    position: absolute;
+    color: $green;
+    font-size: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-Check {
+    padding: 0;
+    margin: 0;
+    width: 29px;
+    margin-left: 0.625rem;
+    height: auto;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

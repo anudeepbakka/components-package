@@ -1,0 +1,18 @@
+@use '../src/assets/styles/variables.scss' as *;
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+// html {
+//     zoom: 0.75; /* Scales everything up */
+//   }
+
+.dark-red{
+    color: $d-red;
+}
+
+.medium-grey{
+    color: $md-gray;
+}
+
+.darkest-gray{
+    color: $darkest-gray;
+}
